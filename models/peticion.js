@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var PeticionSchema = Schema({
-	uniqueID: String,
+	uniqueid: String,
     date: String,
     evento: String,
 
