@@ -7,6 +7,14 @@ var controller = {
 		var event = new Event();
 		var params = req.body;
 		event.uniqueID = params.uniqueID;
+		event.caller = params.caller;
+		event.callee = params.callee;
+		event.destination_type = params.destination_type;
+		event.queue_number = params.queue_number;
+		event.queue_name = params.queue_name;
+		event.queue_status = params.queue_status;
+		event.monitor_filename = params.monitor_filename;
+		event.date = params.date;
 		event.evento = JSON.stringify(params);
 
 		if(params.token != "nic8w9rch9tywer93wy") {

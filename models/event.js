@@ -5,18 +5,15 @@ var Schema = mongoose.Schema;
 
 var EventSchema = Schema({
 	uniqueID: String,
-    calldate: String,
-    type: String,
-    subtype: String,
-    src_extension: String,
-    dst_dialed: String,
-    dst_final: String,
-    dstchannel: String,
-    dst_extension: String,
-    lastapp: String,
-    disposition: String,
+    caller: String,
+    callee: String,
+    destination_type: String,
+    queue_number: String,
+    queue_name: String,
+    queue_status: String,
+    monitor_filename: String,
+    date: String,
     evento: String,
-
 });
 
 module.exports = mongoose.model('Event', EventSchema);
