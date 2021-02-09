@@ -6,12 +6,12 @@ var controller = {
 	saveEvent: function(req, res){
 		var event = new Event();
 		var params = req.body;
-		event.uniqueid = params.uniqueid;
+		event.uniqueID = params.uniqueID;
 		event.evento = JSON.stringify(params);
 
 		if(params.token != "nic8w9rch9tywer93wy") {
 			var peticion = new Peticion();
-			peticion.uniqueid = params.uniqueid;
+			peticion.uniqueID = params.uniqueID;
 			peticion.date = new Date().toLocaleString();
 			peticion.evento = JSON.stringify(params);
 			peticion.save();

@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var EventSchema = Schema({
-	uniqueid: String,
+	uniqueID: String,
     calldate: String,
     type: String,
     subtype: String,
